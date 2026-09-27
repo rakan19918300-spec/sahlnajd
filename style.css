@@ -815,14 +815,24 @@ img {
     overflow: hidden;
 }
 
-.product-img-box img {
+.img-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.product-img-box img,
+.img-link img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.4s ease;
 }
 
-.product-card:hover .product-img-box img {
+.product-card:hover .product-img-box img,
+.product-card:hover .img-link img {
     transform: scale(1.05);
 }
 
